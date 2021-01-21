@@ -80,3 +80,27 @@ function hotelCost(totalDay) {
 // Test/calculate a hotel bill.
 var totalHotelBill = hotelCost(21);
 console.log(totalHotelBill);
+
+var myFriendList = ["Asif", "Istiak", "Tusharadjf", "Estiak", "Shahariar", "Shihab"];
+function megaFriend() {
+  for (var i = 0; i < myFriendList.length; i++) {
+    var allNames = myFriendList[i];
+    var alll = allNames.length;
+    var max = Math.max(alll);
+    console.log(max);
+  }
+}
+
+console.log(megaFriend());
+
+/*
+function megaFriend(myFriendList) {
+  var y = i.length;
+  return console.log(y);
+  for (var i = 0; i < myFriendList.length; i++) {
+    var j = j.length;
+    return console.log(j);
+  }
+}
+*/
+// console.log(megaFriend(myFriendList));
