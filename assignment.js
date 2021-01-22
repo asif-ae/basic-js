@@ -94,6 +94,7 @@ function megaFriend(arrayItems) {
     return biggestItem;
   }
 }
+// Test megaFriend problem.
 var friends = ["Asif", "Istiak", "Tushar", "Estiak", "Shihab"];
 var resultMega = megaFriend(friends);
 console.log(resultMega);
