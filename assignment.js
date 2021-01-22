@@ -1,13 +1,5 @@
 // https://github.com/asif-ae/basic-js
-/*
-kilometerToMeter
 
-budgetCalculator
-
-hotelCost
-
-megaFriend
-*/ /*
 // Solution of the first problem.
 function kilometerToMeter(getKilometer) {
   // Stored kilometer in a variable.
@@ -79,19 +71,29 @@ function hotelCost(totalDay) {
 }
 // Test/calculate a hotel bill.
 var totalHotelBill = hotelCost(21);
-console.log(totalHotelBill);*/
+console.log(totalHotelBill);
 
-var friends = ["Asif", "Istiak", "Tushar", "Estiak", "exampleBigName", "Shahariar", "Shihab"];
+// Solution of the fourth problem.
 function megaFriend(arrayItems) {
   var itemLength = 0;
   var biggestItem;
-  for (var p = 0; p < arrayItems.length; p++) {
-    if (arrayItems[p].length > itemLength) {
-      var itemLength = arrayItems[p].length;
-      biggestItem = arrayItems[p];
+  if (arrayItems.length == 0) {
+    // This block of code to be executed if your array is empty.
+    return console.log("Your array must have more than two items!");
+  } else if (!Array.isArray(arrayItems)) {
+    // This block of code to be executed if your item(s) is not an array.
+    return console.log("Your item(s) is not an array!");
+  } else {
+    // This block of code to be executed if your array fullfill all conditions.
+    for (var p = 0; p < arrayItems.length; p++) {
+      if (arrayItems[p].length > itemLength) {
+        var itemLength = arrayItems[p].length;
+        biggestItem = arrayItems[p];
+      }
     }
+    return biggestItem;
   }
-  return biggestItem;
 }
+var friends = ["Asif", "Istiak", "Tushar", "Estiak", "Shihab"];
 var resultMega = megaFriend(friends);
 console.log(resultMega);
