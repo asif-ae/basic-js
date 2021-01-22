@@ -7,7 +7,7 @@ budgetCalculator
 hotelCost
 
 megaFriend
-*/
+*/ /*
 // Solution of the first problem.
 function kilometerToMeter(getKilometer) {
   // Stored kilometer in a variable.
@@ -79,16 +79,19 @@ function hotelCost(totalDay) {
 }
 // Test/calculate a hotel bill.
 var totalHotelBill = hotelCost(21);
-console.log(totalHotelBill);
+console.log(totalHotelBill);*/
 
-var friends = ["Asif", "Istiak", "Tushar", "Estiak", "Shahariar", "Shihab"];
-var high = friends[0];
-for (var o = 0; o < friends.length; o++) {
-  var numberr = friends[o].length;
-  console.log(Math.max(numberr));
-  var max = 0;
-  if (numberr > max) {
-    max = numberr;
+var friends = ["Asif", "Istiak", "Tushar", "Estiak", "exampleBigName", "Shahariar", "Shihab"];
+function megaFriend(arrayItems) {
+  var itemLength = 0;
+  var biggestItem;
+  for (var p = 0; p < arrayItems.length; p++) {
+    if (arrayItems[p].length > itemLength) {
+      var itemLength = arrayItems[p].length;
+      biggestItem = arrayItems[p];
+    }
   }
+  return biggestItem;
 }
-high = friends[max];
+var resultMega = megaFriend(friends);
+console.log(resultMega);
