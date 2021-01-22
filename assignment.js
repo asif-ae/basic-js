@@ -81,26 +81,14 @@ function hotelCost(totalDay) {
 var totalHotelBill = hotelCost(21);
 console.log(totalHotelBill);
 
-var myFriendList = ["Asif", "Istiak", "Tusharadjf", "Estiak", "Shahariar", "Shihab"];
-function megaFriend() {
-  for (var i = 0; i < myFriendList.length; i++) {
-    var allNames = myFriendList[i];
-    var alll = allNames.length;
-    var max = Math.max(alll);
-    console.log(max);
+var friends = ["Asif", "Istiak", "Tushar", "Estiak", "Shahariar", "Shihab"];
+var high = friends[0];
+for (var o = 0; o < friends.length; o++) {
+  var numberr = friends[o].length;
+  console.log(Math.max(numberr));
+  var max = 0;
+  if (numberr > max) {
+    max = numberr;
   }
 }
-
-console.log(megaFriend());
-
-/*
-function megaFriend(myFriendList) {
-  var y = i.length;
-  return console.log(y);
-  for (var i = 0; i < myFriendList.length; i++) {
-    var j = j.length;
-    return console.log(j);
-  }
-}
-*/
-// console.log(megaFriend(myFriendList));
+high = friends[max];
